@@ -1,0 +1,99 @@
+-- function ColorMyPencils(color)
+--     color = color or "rose-pine"
+--     vim.cmd("colorscheme " .. color)
+
+-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+-- end
+
+return {
+	-- {
+	-- 	"ellisonleao/gruvbox.nvim",
+	-- 	-- name = "gruvbox",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		require("gruvbox").setup({
+	-- 			terminal_colors = true, -- add neovim terminal colors
+	-- 			undercurl = true,
+	-- 			underline = false,
+	-- 			bold = true,
+	-- 			italic = {
+	-- 				strings = false,
+	-- 				emphasis = false,
+	-- 				comments = true,
+	-- 				operators = false,
+	-- 				folds = false,
+	-- 			},
+	-- 			strikethrough = true,
+	-- 			invert_selection = false,
+	-- 			invert_signs = false,
+	-- 			invert_tabline = false,
+	-- 			invert_intend_guides = false,
+	-- 			inverse = false, -- invert background for search, diffs, statuslines and errors
+	-- 			contrast = "", -- can be "hard", "soft" or empty string
+	-- 			palette_overrides = {},
+	-- 			overrides = {},
+	-- 			dim_inactive = false,
+	-- 			transparent_mode = true,
+	-- 		})
+	-- 		vim.cmd([[colorscheme gruvbox]])
+	-- 	end,
+	-- }
+
+	-- {
+	-- 	"folke/tokyonight.nvim",
+	-- 	lazy = false, -- make sure we load this during startup if it is your main colorscheme
+	-- 	priority = 1000, -- make sure to load this before all the other start plugins
+	-- 	config = function()
+	-- 		require("tokyonight").setup({
+	-- 			style = "moon", -- The theme comes in four styles, `storm`, `moon`, a darker variant `night` and `day`
+	-- 			transparent = false, -- Enable this to disable setting the background color
+	-- 			terminal_colors = false, -- Configure the colors used when opening a `:terminal` in Neovim
+	-- 			styles = {
+	-- 				-- Style to be applied to different syntax groups
+	-- 				-- Value is any valid attr-list value for `:help nvim_set_hl`
+	-- 				comments = { italic = true },
+	-- 				keywords = { italic = true },
+	-- 				-- Background styles. Can be "dark", "transparent" or "normal"
+	-- 				sidebars = "normal", -- style for sidebars, see below
+	-- 				floats = "normal", -- style for floating windows,
+	-- 				lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
+	-- 			},
+	-- 	  cache = true,
+	-- 		})
+
+	-- 		vim.cmd[[colorscheme tokyonight]]
+	-- 	end
+	-- }
+
+	-- {
+	-- 	"rose-pine/neovim",
+	-- 	name = "rose-pine",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		require("rose-pine").setup({
+	-- 			variant = "dawn", -- auto, main, moon, or dawn
+	-- 			dark_variant = "moon", -- main, moon, or dawn
+	-- 			dim_inactive_windows = false,
+	-- 			extend_background_behind_borders = false,
+	--
+	-- 			enable = {
+	-- 				terminal = false,
+	-- 				legacy_highlights = true, -- Improve compatibility for previous versions of Neovim
+	-- 				migrations = true, -- Handle deprecated options automatically
+	-- 			},
+	--
+	-- 			styles = {
+	-- 				bold = true,
+	-- 				italic = true,
+	-- 				transparency = true,
+	-- 			},
+	-- 		})
+	--
+	-- 		-- ColorMyPencils("rose-pine");
+	-- 		vim.cmd("colorscheme rose-pine")
+	-- 	end,
+	-- },
+}
