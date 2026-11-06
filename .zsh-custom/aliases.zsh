@@ -1,6 +1,7 @@
 # Aliases for built-in commands
 alias cl='clear'
 alias diffy='diff -y --color=always'
+alias l='ls'
 alias ll='ls -l'
 alias la='ls -a'
 alias lh='ls -lh'
@@ -76,4 +77,5 @@ alias npxh='npx hardhat'
 alias npr='npm run'
 alias nv='nvim'
 alias surf='windsurf'
-alias theme='echo $RANDOM_THEME'
+# List Starship presets; choose one in ~/.config/starship.toml.
+alias theme='starship preset --list'
